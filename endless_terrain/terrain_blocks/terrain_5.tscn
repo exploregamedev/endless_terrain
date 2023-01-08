@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dplsoetifndpl"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_tl1s3"]
-size = Vector2(100, 20)
+size = Vector2(100, 25)
 
 [sub_resource type="BoxMesh" id="BoxMesh_hh068"]
 

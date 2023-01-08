@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://btlbrq33m0r7t"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_tl1s3"]
-size = Vector2(100, 20)
+size = Vector2(100, 25)
 
 [sub_resource type="BoxMesh" id="BoxMesh_hh068"]
 
@@ -26,6 +26,6 @@ mesh = SubResource("BoxMesh_hh068")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.50386, 0.5, 8.29253)
 mesh = SubResource("BoxMesh_hh068")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="Tower0" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.887156, 0, -1.26502, 0, 1, 0, 0.46147, 0, 2.43194, -3.24849, 0.807508, 0.469903)
 mesh = SubResource("CylinderMesh_lct05")

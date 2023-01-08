@@ -1,4 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://b4kyjwru847yp"]
+[gd_scene load_steps=7 format=3 uid="uid://b4kyjwru847yp"]
+
+[ext_resource type="PackedScene" uid="uid://riw3ubbov35l" path="res://endless_terrain/terrain_controller.tscn" id="1_l6ogi"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ox3x8"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -17,7 +19,7 @@ glow_enabled = true
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_pb6xe"]
 
-[node name="world" type="Node3D"]
+[node name="World" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_6rtpw")
@@ -37,3 +39,6 @@ mesh = SubResource("CapsuleMesh_pb6xe")
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 0.981299, 0.192488, 0, -0.192488, 0.981299, 0, 1.268, 2.20254)
+
+[node name="TerrainController" parent="." instance=ExtResource("1_l6ogi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.287614)
