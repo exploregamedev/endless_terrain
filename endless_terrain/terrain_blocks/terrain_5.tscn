@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://dplsoetifndpl"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_tl1s3"]
+size = Vector2(100, 20)
+
+[sub_resource type="BoxMesh" id="BoxMesh_hh068"]
+
+[node name="Terrain0" type="MeshInstance3D"]
+mesh = SubResource("PlaneMesh_tl1s3")
+
+[node name="Block_0" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.09222, 0.5, -0.26032)
+mesh = SubResource("BoxMesh_hh068")
+
+[node name="Block_1" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.96119, 0.5, -4.73713)
+mesh = SubResource("BoxMesh_hh068")
+
+[node name="Block_2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.53458, 0.5, 7.28847)
+mesh = SubResource("BoxMesh_hh068")
+
+[node name="Block_3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.78279, 0.5, -5.73858)
+mesh = SubResource("BoxMesh_hh068")
