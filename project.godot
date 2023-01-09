@@ -8,9 +8,19 @@
 
 config_version=5
 
+_global_script_classes=[{
+"base": "Node3D",
+"class": &"TerrainController",
+"language": &"GDScript",
+"path": "res://terrain_controller.gd"
+}]
+_global_script_class_icons={
+"TerrainController": ""
+}
+
 [application]
 
-config/name="EndlessRunner"
+config/name="EndlessRunnerTmp"
 run/main_scene="res://world.tscn"
 config/features=PackedStringArray("4.0", "Forward Plus")
 config/icon="res://icon.svg"
