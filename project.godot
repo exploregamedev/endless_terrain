@@ -20,7 +20,12 @@ _global_script_class_icons={
 
 [application]
 
-config/name="EndlessRunnerTmp"
+config/name="EndlessRunner"
+config/description="This is an endless runner POC.  Used as a project to learn the concept."
 run/main_scene="res://world.tscn"
 config/features=PackedStringArray("4.0", "Forward Plus")
-config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=2304
+window/size/viewport_height=1296

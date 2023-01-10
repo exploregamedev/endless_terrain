@@ -30,17 +30,19 @@ transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75
 shadow_enabled = true
 
 [node name="Player" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 1, 2.08165e-12)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 1.1, 2.08165e-12)
 script = ExtResource("1_rjl68")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
 shape = SubResource("CapsuleShape3D_ofssd")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 0.1, 2.08165e-12)
 mesh = SubResource("CapsuleMesh_187ag")
 
 [node name="Camera3D" type="Camera3D" parent="Player"]
-transform = Transform3D(1, 0, 0, 0, 0.994584, 0.103938, 0, -0.103938, 0.994584, 0, 1.43376, 1.7554)
+transform = Transform3D(1, 0, 0, 0, 0.926962, 0.375156, 0, -0.375156, 0.926962, 0, 1.98366, 0.968483)
+fov = 104.7
 far = 60.0
 
 [node name="TerrainController" parent="." instance=ExtResource("1_wvryj")]
