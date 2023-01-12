@@ -1,9 +1,31 @@
-[gd_scene load_steps=4 format=3 uid="uid://cc7n4he465j50"]
+[gd_scene load_steps=15 format=3 uid="uid://cc7n4he465j50"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_qw1vn"]
 size = Vector2(100, 25)
 
-[sub_resource type="BoxMesh" id="BoxMesh_o4rp5"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_1dugm"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_l7jsi"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xnpu2"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_sopr5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t504y"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_hmkge"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_phwep"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ru0yu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gv452"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_5j2mv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p4jwq"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_0y5id"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_6248u"]
 data = PackedVector3Array(50, 0, 12.5, -50, 0, 12.5, 50, 0, -12.5, -50, 0, 12.5, -50, 0, -12.5, 50, 0, -12.5)
@@ -12,29 +34,59 @@ data = PackedVector3Array(50, 0, 12.5, -50, 0, 12.5, 50, 0, -12.5, -50, 0, 12.5,
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, -10)
 mesh = SubResource("PlaneMesh_qw1vn")
 
-[node name="Block_0" type="MeshInstance3D" parent="."]
+[node name="Block_0" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.20113, 0.5, 5.99967)
-mesh = SubResource("BoxMesh_o4rp5")
 
-[node name="Block_3" type="MeshInstance3D" parent="."]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Block_0"]
+shape = SubResource("BoxShape3D_1dugm")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Block_0"]
+mesh = SubResource("BoxMesh_l7jsi")
+
+[node name="Block_3" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.22781, 0.499999, -4.66159)
-mesh = SubResource("BoxMesh_o4rp5")
 
-[node name="Block_4" type="MeshInstance3D" parent="."]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Block_3"]
+shape = SubResource("BoxShape3D_xnpu2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Block_3"]
+mesh = SubResource("BoxMesh_sopr5")
+
+[node name="Block_4" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.739858, 0.499999, 2.20398)
-mesh = SubResource("BoxMesh_o4rp5")
 
-[node name="Block_1" type="MeshInstance3D" parent="."]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Block_4"]
+shape = SubResource("BoxShape3D_t504y")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Block_4"]
+mesh = SubResource("BoxMesh_hmkge")
+
+[node name="Block_1" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.08285, 0.5, 3.56303)
-mesh = SubResource("BoxMesh_o4rp5")
 
-[node name="Block_5" type="MeshInstance3D" parent="."]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Block_1"]
+shape = SubResource("BoxShape3D_phwep")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Block_1"]
+mesh = SubResource("BoxMesh_ru0yu")
+
+[node name="Block_5" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6105, 0.499999, 9.74518)
-mesh = SubResource("BoxMesh_o4rp5")
 
-[node name="Block_2" type="MeshInstance3D" parent="."]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Block_5"]
+shape = SubResource("BoxShape3D_gv452")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Block_5"]
+mesh = SubResource("BoxMesh_5j2mv")
+
+[node name="Block_2" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.93604, 0.500001, -1.16763)
-mesh = SubResource("BoxMesh_o4rp5")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Block_2"]
+shape = SubResource("BoxShape3D_p4jwq")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Block_2"]
+mesh = SubResource("BoxMesh_0y5id")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
