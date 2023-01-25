@@ -1,4 +1,4 @@
-# Endless terrain tutorial
+# 3D game, endless terrain tutorial
 
 In this [Youtube tutorial](https://youtu.be/1jNt91A2PW0) you will build a simple 3D "Endless Runner" mechanism in Godot 4.
 Completeing this tutorial will give you a great starting point to build your own endless runner 3D game.
