@@ -1,6 +1,6 @@
 # Endless terrain tutorial
 
-In this [Youtube tutorial](https://youtu.be/M5BTC5FliAs) you will build a simple 3D "Endless Runner" mechanism in Godot 4.
+In this [Youtube tutorial](https://youtu.be/1jNt91A2PW0) you will build a simple 3D "Endless Runner" mechanism in Godot 4.
 Completeing this tutorial will give you a great starting point to build your own endless runner 3D game.
 
 ## A terrain "conveyor" belt
