@@ -15,3 +15,5 @@ This cycle continues givin the illution of infinite terrian.
 
 
 ![](docs/terain%20conveyor%20demo.png)
+
+Join the [ExploreGameDev news letter](https://exploregame.dev) to keep track of new tutorials
